@@ -32,6 +32,7 @@ public class PruebaCancion {
 		
 		Cancion primeraCancionGit = new Cancion("Before I Forget", "Slipknot", 217, false);
 		Cancion segundaCancionGit = new Cancion("Freezing moon","Mayhem",383,false);
+		Cancion terceraCancionGit=new Cancion("Schism", "Tool", 406, false);
 
 		if (primeraCancion.reproducirCancion()) {
 			System.out.println(primeraCancion.getTitulo() + "está sonando");
@@ -43,7 +44,7 @@ public class PruebaCancion {
 			System.out.println("Parece que no son la misma canción");
 		}
 		Cancion nueva = new Cancion("Baba O'riley", "The Who", 310, false);
-		Cancion[] canciones = { primeraCancion, segundaCancion, terceraCancion, nueva };
+		Cancion[] canciones = { primeraCancion, segundaCancion, terceraCancion, nueva, primeraCancionGit,segundaCancionGit,terceraCancionGit};
 		
 		mostrarCancionesyAutor(canciones);
 		mostrarCancionMasLarga(canciones);
